@@ -20,8 +20,7 @@ class CreateTables extends Migration
             $table->string('password');
             $table->string('country')->nullable();
             $table->string('province')->nullable();
-            $table->string('first_name')->nullable();
-            $table->string('last_name')->nullable();
+            $table->string('name')->nullable();
             $table->tinyInteger('is_admin')->default(0);
             $table->rememberToken();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));

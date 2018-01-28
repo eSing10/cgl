@@ -17,8 +17,7 @@ class seed_tables extends Seeder
             'password' => bcrypt('secret'),
             'country' => str_random(10).'@gmail.com',
             'province' => str_random(10),
-            'first_name' => str_random(10),
-            'last_name' => str_random(10),
+            'name' => str_random(10),
             'is_admin' => 1,
         ]);
 
@@ -28,8 +27,7 @@ class seed_tables extends Seeder
             'password' => bcrypt('secret'),
             'country' => str_random(10),
             'province' => str_random(10),
-            'first_name' => str_random(10),
-            'last_name' => str_random(10),
+            'name' => str_random(10),
             'is_admin' => 0,
         ]);
 
