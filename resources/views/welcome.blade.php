@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    This website is currently under development
+                    This website is currently under development.
                 </div>
             </div>
         </div>
