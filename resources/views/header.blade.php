@@ -77,13 +77,13 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Welcome
+            <div class="topnav">
+                <div class="logo">
                 </div>
-
                 <div class="links">
-                    This website is currently under development.
+                    <a href="https://laravel.com/docs">Leagues</a>
+                    <a href="https://laracasts.com">Streams</a>
+                    <a href="https://laravel-news.com">Stats</a>
                 </div>
             </div>
         </div>
