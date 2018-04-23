@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -19,6 +20,15 @@
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
+            }
+
+            .unselectable {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
 
             .full-height {
@@ -66,26 +76,18 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Welcome
-                </div>
-
-                <div class="links">
-                    This website is currently under development
-                </div>
-            </div>
+            <form>
+                <table> 
+                    <tr> 
+                        <td class="unselectable"> E-MAil </td>
+                        <td> </input type='text'> </td> 
+                    </tr> 
+                    <tr> 
+                        <td class ="unselectable"> Password </td> 
+                        <td> </input type='password'> </td> 
+                    </tr>
+                </table> 
+            </form>
         </div>
     </body>
 </html>
