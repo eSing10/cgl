@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    This site is currently under construction.
+                    This site is currently under construction. </br>
                     <a>About</a>
                 </div>
             </div>
