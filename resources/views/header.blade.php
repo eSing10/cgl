@@ -68,7 +68,7 @@
 
         <div class="topnav">
             <div class="links">
-                <a href="{{ url('/home') }}">Home</a>
+                <a href="{{ url('/') }}">Home</a>
                 <a url="/leagues">Leagues</a>
                 <a url="/streams">Streams</a>
                 <a url="/stats">Stats</a>
