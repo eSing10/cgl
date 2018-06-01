@@ -65,6 +65,16 @@
         </style>
     </head>
     <body>
+
+        <div class="topnav">
+            <div class="links">
+                <a url="/home">Home</a>
+                <a url="/leagues">Leagues</a>
+                <a url="/streams">Streams</a>
+                <a url="/stats">Stats</a>
+            </div>
+        </div>
+        
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -76,16 +86,8 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="topnav">
-                <div class="logo">
-                </div>
-                <div class="links">
-                    <a href="https://laravel.com/docs">Leagues</a>
-                    <a href="https://laracasts.com">Streams</a>
-                    <a href="https://laravel-news.com">Stats</a>
-                </div>
-            </div>
         </div>
+
+
     </body>
 </html>
