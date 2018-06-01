@@ -84,7 +84,7 @@
 
                 <div class="links">
                     This site is currently under construction. </br>
-                    <a href="{{ route('about') }}">About</a>
+                    <a href="{{ url('/about') }}">About</a>
                 </div>
             </div>
         </div>
