@@ -68,13 +68,13 @@
 
         <div class="topnav">
             <div class="links">
-                <a url="/home">Home</a>
+                <a href="{{ url('/home') }}">Home</a>
                 <a url="/leagues">Leagues</a>
                 <a url="/streams">Streams</a>
                 <a url="/stats">Stats</a>
             </div>
         </div>
-        
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
