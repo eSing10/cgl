@@ -59,17 +59,18 @@
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
+            a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
             }
 
-            /* Dropdown Button */
-            .dropbtn {
-                background-color: #4CAF50;
-                color: white;
-                padding: 16px;
-                font-size: 16px;
-                border: none;
+            .m-b-md {
+                margin-bottom: 30px;
             }
 
             /* The container <div> - needed to position the dropdown content */
@@ -106,7 +107,7 @@
 
             /* Change the background color of the dropdown button when the dropdown content is shown */
             .dropdown:hover .dropbtn {
-                background-color: #3e8e41;
+                background-color: #ad7c7c;
             }
         </style>
     </head>
@@ -116,13 +117,12 @@
             <div class="links">
                 <a href="{{ url('/') }}">Home</a>
                 <div class="dropdown">
-                    <a class="dropbtn">Games</a>
-                    <!-- to be auto filled in once i understand controllers-->
+                    <a href="{{ url('/') }}" class="dropbtn">Games</a>
                     <div class="dropdown-content">
+                        <!-- to be auto filled in once i understand controllers-->
                         <a href="{{ url('/') }}">Games</a>
                     </div>
                 </div>
-                <a href="{{ url('/') }}">Games</a>
                 <a href="{{ url('/about') }}">About</a>
                 <!--if not logged in-->
                 <!--if logged in-->
