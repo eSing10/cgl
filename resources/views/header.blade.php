@@ -17,7 +17,7 @@
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
-                height: 100vh;
+                /*height: 100vh;*/
                 margin: 0;
             }
 
@@ -59,7 +59,7 @@
                 text-transform: uppercase;
             }
 
-            a {
+            .dropdown > a {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 12px;
@@ -81,11 +81,16 @@
 
             /* Dropdown Content (Hidden by Default) */
             .dropdown-content {
+                color: #636b6f;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
                 display: none;
                 position: absolute;
                 background-color: #f1f1f1;
                 min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;
             }
 
@@ -123,10 +128,11 @@
                         <a href="{{ url('/') }}">Games</a>
                     </div>
                 </div>
-                <a href="{{ url('/about') }}">About</a>
                 <!--if not logged in-->
                 <!--if logged in-->
                 <a href="{{ url('/') }}">My Account</a>
+
+                <a href="{{ url('/about') }}">About</a>
             </div>
         </div>
 
